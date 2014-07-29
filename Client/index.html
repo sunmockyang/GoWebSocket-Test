@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<html>
+
+<head>
+<title>Websocket test - Sunmock Yang</title>
+<link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+
+<body>
+
+<div id="project_presentation" width="600px" height="300px">
+</div>
+
+
+<div id="description">
+Send message:
+<!-- <input id="message"></input>document.getElementById('message').value -->
+<button onclick="wsApp.sendMessage(generate());">Send Message</button>
+<button onclick="main();">Start</button>
+<br/>
+<br/>
+Playing around with WebSockets
+</div>
+
+<div id="project_name">Websocket Test</div>
+<a id="credit" href="http://sunmock.com">Sunmock Yang, Jul. 2014</a>
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+	var wsUri = "ws://echo.websocket.org",
+	wsApp = null;
+	function main () {
+		console.log("My body is ready");
+		wsApp = new WSApp(wsUri, document.getElementById("project_presentation"));
+	}
+
+	// window.onload = function(){setTimeout(main, 1000);};
+	window.onload = main;
+</script>
+
+
+</body>
+
+</html>

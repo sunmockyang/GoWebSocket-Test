@@ -1,0 +1,66 @@
+body{
+	background-color: #333;
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFF;
+}
+
+input{
+	border: none;
+}
+
+a{
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover{
+	color:#9DD;
+}
+
+#credit{
+	right: 10px;
+	position: fixed;
+	bottom: 10px;
+}
+
+#project_name{
+	left: 10px;
+	position: fixed;
+	bottom: 10px;
+}
+
+#description{
+	text-align: center;
+}
+
+#project_presentation{
+	z-index: 1;
+	margin-top:10px;
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	border: solid gray 2px;
+	font-family: "consolas";
+	overflow: scroll;
+}
+
+.msgTime{
+	color: #CCC;
+}
+
+.msgSource{
+}
+
+.msgData{
+	color: #D99;
+}
+
+.srcCLIENT{
+	color: #5DD;
+}
+
+.srcSERVER{
+	color: #5D5;
+}
