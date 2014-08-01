@@ -24,7 +24,7 @@ func MainServer(w http.ResponseWriter, req *http.Request) {
 func main() {
 	startMessage()
 
-	http.Handle("/ws", websocket.Handler(echoServer))
+	http.Handle("/ws", websocket.Server{Handler: websocket.Handler(echoServer)})
 	http.HandleFunc("/", MainServer)
 
 	err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
